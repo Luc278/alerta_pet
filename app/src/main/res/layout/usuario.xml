@@ -7,13 +7,13 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/profile_ft"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/rounded_border"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="156dp"
         tools:srcCompat="@tools:sample/avatars" />
@@ -43,7 +43,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="fitCenter"
-        tools:ignore="ContentDescription"
+        tools:ignore="ContentDescription,MissingConstraints"
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@drawable/pet_img2" />
@@ -59,13 +59,14 @@
         tools:layout_editor_absoluteY="115dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nome"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="180dp" />
+        tools:layout_editor_absoluteY="180dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -73,7 +74,9 @@
         android:layout_height="20dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        tools:layout_editor_absoluteX="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_name"
+        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteY="180dp"
         tools:srcCompat="@drawable/icon_troca_nome" />
 
@@ -91,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button4"
+        android:id="@+id/ajudas_feitas"
         android:layout_marginTop="20dp"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -104,13 +107,14 @@
         app:layout_constraintTop_toBottomOf="@id/caixa_mensagens" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/jnjnkjn"
+        android:id="@+id/sair_conta"
         android:layout_width="136dp"
         android:layout_height="62dp"
         android:background=""
         android:text="@string/sair"
         android:textAllCaps="false"
         android:textSize="20sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="662dp" />
 

@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ft_user_login"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
@@ -42,7 +42,7 @@
         android:text="@string/email"
         android:textSize="20sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ft_user_login"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
@@ -89,7 +89,7 @@
         tools:ignore="LabelFor,MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/esq_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -101,26 +101,26 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/btn_entrar"
         android:layout_width="174dp"
         android:layout_height="48dp"
-        android:text="@string/entrar"
         android:background="@drawable/button_border"
+        android:text="@string/entrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintTop_toBottomOf="@+id/esq_senha"
+        app:layout_constraintVertical_bias="0.47" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/btn_cad"
         android:layout_width="174dp"
         android:layout_height="48dp"
         android:text="@string/cadastro"
         android:background="@drawable/button_border"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/btn_entrar"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="118dp" />
 
