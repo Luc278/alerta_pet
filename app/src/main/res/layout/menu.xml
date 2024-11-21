@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_border"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet3"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+        tools:srcCompat="@drawable/hamburger_menu" />
+
+    <ImageView
+        android:id="@+id/pet3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@drawable/pet_img3"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/pet1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@drawable/pet_img1"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/pet2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/pet1"
+        app:layout_constraintStart_toEndOf="@+id/pet3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/pet_img2"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteY="204dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/green"
+        android:focusable="false"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="115dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/saudacao"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:text="@string/saudacao"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adotar"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:background="@drawable/button_border"
+        android:text="@string/adotar"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_green"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/green"
+        android:focusable="false"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="381dp"
+        tools:ignore="MissingConstraints" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/ajudar"
+       android:layout_width="115dp"
+       android:layout_height="62dp"
+       android:background="@drawable/button_border"
+       android:text="@string/ajudar"
+       android:textAllCaps="false"
+       android:textColor="@color/dark_green"
+       tools:ignore="MissingConstraints,TextSizeCheck"
+       tools:layout_editor_absoluteX="234dp"
+       tools:layout_editor_absoluteY="451dp" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/cadastrar_pet"
+       android:layout_width="146dp"
+       android:layout_height="66dp"
+       android:background="@drawable/button_border"
+       android:text="@string/cad_pet"
+       android:textColor="@color/dark_green"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/ajudar"
+       app:layout_constraintVertical_bias="0.513"
+       tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_border"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/pet3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="15dp"
+        tools:srcCompat="@drawable/pet_img3" />
+
+    <ImageView
+        android:id="@+id/pet1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="15dp"
+        tools:srcCompat="@drawable/pet_img1" />
+
+    <ImageView
+        android:id="@+id/pet2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@drawable/pet_img2" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/green"
+        android:focusable="false"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="180dp"
+        tools:srcCompat="@drawable/icon_troca_nome" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/caixa_mensagens"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/caixa_msg"
+        android:background="@drawable/button_border"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="@string/ajudas_feitas"
+        android:background="@drawable/button_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caixa_mensagens" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/jnjnkjn"
+        android:layout_width="136dp"
+        android:layout_height="62dp"
+        android:background=""
+        android:text="@string/sair"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="662dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

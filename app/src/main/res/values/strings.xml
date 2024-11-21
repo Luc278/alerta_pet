@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AlertaPet</string>
+    <string name="alerta_pet">Alerta Pet</string>
+    <string name="ftpet">Foto pet</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="esqueceSenha">Esqueceu a senha?</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="cadastro">Cadastre-se</string>
+    <string name="saudacao">Oi ****, o que você está buscando hoje?</string>
+    <string name="adotar">Quero ADOTAR</string>
+    <string name="ajudar">Quero AJUDAR</string>
+    <string name="cad_pet">CADASTRAR PET</string>
+    <string name="nome">NOME</string>
+    <string name="caixa_msg">Caixa de Mensagens</string>
+    <string name="ajudas_feitas">Ajudas feitas</string>
+    <string name="sair">Sair da Conta</string>
+</resources>
